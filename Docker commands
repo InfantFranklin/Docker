@@ -396,6 +396,8 @@ username:manishaatoa
 password:
 
 docker push httpdApachImage1:1.1
+docker commit -m 'Modified Index Page' -a 'Infant Franklin <infantfranklin1@gmail.com>' x-httpd infant8182/httpdapachimage1:1.1
+docker push infant8182/httpdapachimage1:1.1
 
 
 
