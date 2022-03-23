@@ -536,12 +536,16 @@ ENV MYSQL_PASSWORD password
 # executed during container startup
 ADD script.sql /docker-entrypoint-initdb.d/
 
+Step 3:
+To create a image by building method use cmds
 $ docker build -t p-mysql:5.1 .
 $ docker images
-$docker run --name a-mysql -d p-mysql:5.1
-$docker exec -it a-mysql bash
+$ docker run --name a-mysql -d p-mysql:5.1
+$ docker exec -it a-mysql bash
 #mysql -uroot -padmin
 
+To run a container which was created earlier
+$docker restart <container name>
 
 
 
